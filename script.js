@@ -156,6 +156,13 @@ const kembalianTransaksiKetiga = hasilTransaksiKetiga.kembalian;
 const uangCukupTransaksiKetiga = hasilTransaksiKetiga.uangCukup;
 const gratisAntarTransaksiKetiga = hasilTransaksiKetiga.gratisAntar;
 const semuaMenuTersediaTransaksiKetiga = hasilTransaksiKetiga.semuaMenuTersedia;
+const gratisAntarDenganAndTransaksiKetiga =
+  subtotalTransaksiKetiga >= 100000 && hasilTransaksiKetiga.jumlahSeluruhItem >= 5;
+console.log(
+  "Gratis antar TRX-003 (OR, lalu AND):",
+  gratisAntarTransaksiKetiga,
+  gratisAntarDenganAndTransaksiKetiga
+);
 
 if (uangCukupTransaksiPertama) {
   const sisaPecahan50000TransaksiPertama = kembalianTransaksiPertama % 50000;
@@ -240,8 +247,8 @@ Jumlah transaksi: ${jumlahTransaksi}
 Pendapatan harian: Rp${pendapatanHarian}
 Rata-rata pendapatan: Rp${rataRataPendapatan}
 Selisih total tertinggi dan terendah: Rp${selisihTerbesar}
-Porsi transaksi pertama: ${persentaseTransaksiPertama}%
-Harga kopi setelah kenaikan 5% selama 3 bulan: Rp${hargaKopiTigaBulan}`);
+Porsi transaksi pertama: ${persentaseTransaksiPertama.toFixed(2)}%
+Harga kopi setelah kenaikan 5% selama 3 bulan: Rp${hargaKopiTigaBulan.toFixed(2)}`);
 
 /*
 Jawaban Bagian 3:
