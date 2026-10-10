@@ -69,6 +69,7 @@ console.log("Kota:", kedai["kota"]);
 console.log("Jam tutup:", kedai.jamOperasional.tutup);
 console.log("Menu pertama:", menu[0]);
 console.log("Menu terakhir:", menu[menu.length - 1]);
+console.log("menu[6]:", menu[6]);
 console.log("Pelanggan transaksi kedua:", transaksi[1].pelanggan);
 console.log(
   "Menu pada item kedua transaksi ketiga:",
