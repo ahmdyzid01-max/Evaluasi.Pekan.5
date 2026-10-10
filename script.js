@@ -247,8 +247,8 @@ Jumlah transaksi: ${jumlahTransaksi}
 Pendapatan harian: Rp${pendapatanHarian}
 Rata-rata pendapatan: Rp${rataRataPendapatan}
 Selisih total tertinggi dan terendah: Rp${selisihTerbesar}
-Porsi transaksi pertama: ${persentaseTransaksiPertama}%
-Harga kopi setelah kenaikan 5% selama 3 bulan: Rp${hargaKopiTigaBulan}`);
+Porsi transaksi pertama: ${persentaseTransaksiPertama.toFixed(2)}%
+Harga kopi setelah kenaikan 5% selama 3 bulan: Rp${hargaKopiTigaBulan.toFixed(2)}`);
 
 /*
 Jawaban Bagian 3:
