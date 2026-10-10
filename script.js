@@ -64,3 +64,35 @@ const transaksi = [
   }
 ];
 
+console.log("Nama kedai:", kedai.nama);
+console.log("Kota:", kedai["kota"]);
+console.log("Jam tutup:", kedai.jamOperasional.tutup);
+console.log("Menu pertama:", menu[0]);
+console.log("Menu terakhir:", menu[menu.length - 1]);
+console.log("menu[6]:", menu[6]);
+console.log("Pelanggan transaksi kedua:", transaksi[1].pelanggan);
+console.log(
+  "Menu pada item kedua transaksi ketiga:",
+  menu[transaksi[2].pesanan[1].indeksMenu].nama
+);
+console.log("typeof kedai.tahunBerdiri:", typeof kedai.tahunBerdiri);
+console.log("typeof kedai.sedangBuka:", typeof kedai.sedangBuka);
+console.log("typeof kedai.website:", typeof kedai.website);
+console.log("typeof kedai.jamOperasional:", typeof kedai.jamOperasional);
+console.log("typeof menu:", typeof menu);
+console.log("typeof transaksi[0].catatan:", typeof transaksi[0].catatan);
+
+let catatanKasir;
+console.log("Catatan kasir:", catatanKasir);
+
+/*
+Jawaban Bagian 2:
+1. nomorWhatsApp berupa string karena nomor telepon adalah identitas, bukan nilai untuk dihitung.
+   String menjaga angka 0 di depan dan tanda + bila ada.
+2. website bernilai null untuk menandai bahwa datanya sengaja belum tersedia. catatanKasir
+   dibiarkan undefined karena nilainya belum pernah diisi atau ditetapkan.
+3. menu[6] menghasilkan undefined karena indeks array 6 item adalah 0 sampai 5.
+4. typeof menu menghasilkan "object"; JavaScript menggolongkan array sebagai object.
+5. menu berupa array karena berisi daftar berurutan dan perlu diakses dengan indeks. kedai
+   berupa object karena menyimpan satu entitas dengan properti bernama.
+*/
