@@ -156,6 +156,13 @@ const kembalianTransaksiKetiga = hasilTransaksiKetiga.kembalian;
 const uangCukupTransaksiKetiga = hasilTransaksiKetiga.uangCukup;
 const gratisAntarTransaksiKetiga = hasilTransaksiKetiga.gratisAntar;
 const semuaMenuTersediaTransaksiKetiga = hasilTransaksiKetiga.semuaMenuTersedia;
+const gratisAntarDenganAndTransaksiKetiga =
+  subtotalTransaksiKetiga >= 100000 && hasilTransaksiKetiga.jumlahSeluruhItem >= 5;
+console.log(
+  "Gratis antar TRX-003 (OR, lalu AND):",
+  gratisAntarTransaksiKetiga,
+  gratisAntarDenganAndTransaksiKetiga
+);
 
 if (uangCukupTransaksiPertama) {
   const sisaPecahan50000TransaksiPertama = kembalianTransaksiPertama % 50000;
